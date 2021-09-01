@@ -1,4 +1,6 @@
 import { GoogleMap, LoadScript, InfoWindow } from "@react-google-maps/api";
+import Image from "next/image";
+import pngn from "../../public/pngn.jpg";
 
 const containerStyle = {
   height: "100vh",
@@ -21,8 +23,8 @@ const positionIwamotocho = {
 };
 
 const divStyle = {
-  background: "white",
-  fontSize: 7.5,
+  width: 50,
+  borderRadius: 50,
 };
 
 const MyComponent = () => {
@@ -31,12 +33,14 @@ const MyComponent = () => {
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={17}>
         <InfoWindow position={positionAkiba}>
           <div style={divStyle}>
-            <h1>秋葉原オフィス</h1>
+            <a href="https://tabelog.com/">
+              <Image src={pngn} alt="pngn" />
+            </a>
           </div>
         </InfoWindow>
         <InfoWindow position={positionIwamotocho}>
           <div style={divStyle}>
-            <h1>岩本町オフィス</h1>
+            <Image src={pngn} alt="pngn" />
           </div>
         </InfoWindow>
       </GoogleMap>
