@@ -1,6 +1,9 @@
 import { GoogleMap, LoadScript, InfoWindow } from "@react-google-maps/api";
 import Image from "next/image";
-import pngn from "../../public/pngn.jpg";
+import icon from "../../public/img01.jpg";
+import Layout from "../../components/layoutParts/Layout";
+
+
 
 const containerStyle = {
   height: "100vh",
@@ -27,24 +30,42 @@ const divStyle = {
   borderRadius: 50,
 };
 
+
 const MyComponent = () => {
+
   return (
-    <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_RESTAPI_URL}>
-      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={17}>
-        <InfoWindow position={positionAkiba}>
-          <div style={divStyle}>
-            <a href="https://tabelog.com/">
-              <Image src={pngn} alt="pngn" />
-            </a>
-          </div>
-        </InfoWindow>
-        <InfoWindow position={positionIwamotocho}>
-          <div style={divStyle}>
-            <Image src={pngn} alt="pngn" />
-          </div>
-        </InfoWindow>
-      </GoogleMap>
-    </LoadScript>
+    <Layout title="飯ランMAP">
+      <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_RESTAPI_URL}>
+        <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={17}>
+          <InfoWindow position={positionAkiba}>
+            <div style={divStyle}>
+              <a href="https://tabelog.com/">
+                <Image
+                  src={icon}
+                  alt=""
+                  className="object-cover rounded-full flex items-center justify-center"
+                  width="70"
+                  height="70"
+                />
+              </a>
+            </div>
+          </InfoWindow>
+          <InfoWindow position={positionIwamotocho}>
+            <div style={divStyle}>
+              <a href="https://tabelog.com/">
+                <Image
+                  src={icon}
+                  alt=""
+                  className="object-cover rounded-full flex items-center justify-center"
+                  width="70"
+                  height="70"
+                />
+              </a>
+            </div>
+          </InfoWindow>
+        </GoogleMap>
+      </LoadScript>
+    </Layout>
   );
 };
 

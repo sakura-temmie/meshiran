@@ -55,6 +55,7 @@ const storeUpload = () => {
         </div>
       </div>
       <div className="flex flex-col items-center mt-10">
+        
         <button className="text-lg bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-6 rounded">
           新しくお店を追加する
         </button>
