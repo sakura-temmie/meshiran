@@ -1,4 +1,4 @@
-import Layout from "../../components/layoutParts/Layout";
+import Layout from "../components/layoutParts/Layout";
 
 const category = () => {
   const category = [
@@ -142,7 +142,7 @@ const category = () => {
         <p className="text-center my-4 text-lg">
           お好きなジャンル　※最低3つ選択
         </p>
-        {/* <div className="text-center"> */}
+        <div className="text-center">
         {category.map((tag) => (
           <button
             style={{ border: "solid #f00a00 2px" }}
@@ -152,7 +152,7 @@ const category = () => {
             #{tag.name}
           </button>
         ))}
-        {/* </div> */}
+        </div>
       </div>
       <div className="text-center mt-5">
         <button
