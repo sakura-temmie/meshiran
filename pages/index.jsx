@@ -5,7 +5,6 @@ import { useState } from "react";
 import Layout from "../components/layoutParts/Layout";
 
 const index = () => {
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -53,7 +52,7 @@ const index = () => {
           ログイン
         </button>
         <p className="text-center mt-6 mb-2">はじめてご利用の方</p>
-        <Link href="/register">
+        <Link href="/register" passHref>
           <button
             className="text-lg hover:bg-yellow-700 text-white font-bold py-2 px-9 rounded"
             style={{ background: "#ff8c00" }}
