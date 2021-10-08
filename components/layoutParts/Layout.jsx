@@ -17,7 +17,7 @@ export default function Layout({ children, title }) {
         >
           <p className="font-bold text-white text-lg">{title}</p>
         </div>
-        <main className="flex-grow">
+        <main className="flex-grow pb-8">
           {children}
         </main>
         <footer className="text-center p-2 absolute bottom-0 w-full bg-gray-100 flex justify-between px-6 sticky bottom-0">
@@ -37,7 +37,7 @@ export default function Layout({ children, title }) {
               />
             </svg>
           </Link>
-          <Link href="/map/" passHref>
+          <Link href="/map" passHref>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-7 w-7"
