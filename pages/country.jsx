@@ -31,7 +31,7 @@ export default function Country() {
           return res.json();
         }
       });
-      router.push("/login");
+      // router.push("/login");
     } catch (err) {
       alert(err);
     }
