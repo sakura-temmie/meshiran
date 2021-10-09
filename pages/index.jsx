@@ -1,25 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../public/meshiran_logo-03.png";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import Layout from "../components/layoutParts/Layout";
 
 const Index = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  console.log(email);
-  console.log(password);
-  // localStorage.setItem("email", email);
+  const router = useRouter();
+
   const login = async (e) => {
     e.preventDefault();
     try {
-      // await fetch(`${process.env.NEXT_PUBLIC_RESTAPI_URL}/login`, {
       await fetch("https://nobucom.sakura.ne.jp/meshiran/public/api/login", {
         method: "POST",
-        body: {
+        body: JSON.stringify({
           email: email,
           password: password,
-        },
+        }),
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
@@ -33,16 +32,16 @@ const Index = () => {
           }
         })
         .then((data) => {
-          localStorage.setItem("access_token", data);
+          localStorage.setItem("access_token", JSON.stringify(data.token));
         });
-      // router.push("/main");
+      router.push("/main");
     } catch (err) {
       alert(err);
     }
   };
 
   return (
-    <Layout title="飯ラン">
+    <Layout title="メシラン">
       <form onSubmit={login}>
         <div className="p-5">
           <div className="text-center">
@@ -62,6 +61,7 @@ const Index = () => {
           <input
             className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-red-500 focus:border-red-500 focus:z-10 sm:text-sm"
             value={password}
+            type="password"
             onChange={(e) => {
               setPassword(e.target.value);
             }}
