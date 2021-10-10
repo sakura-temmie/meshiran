@@ -8,7 +8,7 @@ import i_04 from "../../public/04.jpg";
 
 const top = () => {
   return (
-    <Layout title="ユーザー名さんの飯ラン">
+    <Layout title="ユーザー名さんのメシラン">
       <div className="flex items-center justify-between px-5 bg-white mt-2">
         <Image
           src={icon}

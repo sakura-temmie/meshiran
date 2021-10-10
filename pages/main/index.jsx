@@ -19,7 +19,7 @@ export default function mainIndex() {
                   height="60"
                 />
                 <div className="pl-2 flex flex-col">
-                  <p className="font-bold font-lg">ユーザー名</p>
+                  <p className="font-bold font-lg">山田花子</p>
                   <div className="flex">
                     {/*
                 <p
@@ -93,8 +93,10 @@ export default function mainIndex() {
                   </div>
                 </div>
               </div>
+              <p className="w-full text-xs">@原宿　ビーガンじゃんがら</p>
               <p className="w-full py-4">
-                とてもおいしかったです。ご飯によく合います。とてもおいしかったです。ご飯によく合います。
+                鉄板まま出てくるので、熱々の状態で食べることができます。
+                ビーガンミートで、体にもよく、オススメです！
               </p>
             </div>
             <div>
@@ -123,7 +125,7 @@ export default function mainIndex() {
                   height="60"
                 />
                 <div className="pl-2 flex flex-col">
-                  <p className="font-bold font-lg">ユーザー名</p>
+                  <p className="font-bold font-lg">鈴木拓也</p>
                   <div className="flex">
                     {/*
                 <p
@@ -187,7 +189,7 @@ export default function mainIndex() {
                     </svg>
                   </div>
                   <p className="text-xs pt-2">
-                    30いいね！　14いきたい！　3コメント
+                    43いいね！　21いきたい！　8コメント
                   </p>
                   <div className="flex items-center justify-center">
                     <p>評価：また行きたい</p>
@@ -197,8 +199,10 @@ export default function mainIndex() {
                   </div>
                 </div>
               </div>
+              <p className="w-full text-xs">@新宿　エルボラーちょ</p>
               <p className="w-full py-4">
-                とてもおいしかったです。ご飯によく合います。とてもおいしかったです。ご飯によく合います。
+                メキシコ料理をリーズナブルに食べられる。
+                味の濃いジャンバラヤで酒が進む。
               </p>
             </div>
             <div>
@@ -227,7 +231,7 @@ export default function mainIndex() {
                   height="60"
                 />
                 <div className="pl-2 flex flex-col">
-                  <p className="font-bold font-lg">ユーザー名</p>
+                  <p className="font-bold font-lg">田中博</p>
                   <div className="flex">
                     {/*
                 <p
@@ -291,7 +295,7 @@ export default function mainIndex() {
                     </svg>
                   </div>
                   <p className="text-xs pt-2">
-                    30いいね！　14いきたい！　3コメント
+                    22いいね！　8いきたい！　1コメント
                   </p>
                   <div className="flex items-center justify-center">
                     <p>評価：また行きたい</p>
@@ -301,8 +305,11 @@ export default function mainIndex() {
                   </div>
                 </div>
               </div>
+              <p className="w-full text-xs">＠銀座　かつ吉</p>
+
               <p className="w-full py-4">
-                とてもおいしかったです。ご飯によく合います。とてもおいしかったです。ご飯によく合います。
+                三元豚の分厚いヒレカツを、カツ丼でいただきました♪
+                お肉が柔らかく、薄味の出汁によく合います。豚汁も嬉しい。
               </p>
             </div>
             <div>
@@ -331,7 +338,7 @@ export default function mainIndex() {
                   height="60"
                 />
                 <div className="pl-2 flex flex-col">
-                  <p className="font-bold font-lg">ユーザー名</p>
+                  <p className="font-bold font-lg">斎藤理恵</p>
                   <div className="flex">
                     {/*
                 <p
@@ -395,7 +402,7 @@ export default function mainIndex() {
                     </svg>
                   </div>
                   <p className="text-xs pt-2">
-                    30いいね！　14いきたい！　3コメント
+                    50いいね！　39いきたい！　12コメント
                   </p>
                   <div className="flex items-center justify-center">
                     <p>評価：また行きたい</p>
@@ -405,8 +412,11 @@ export default function mainIndex() {
                   </div>
                 </div>
               </div>
+              <p className="w-full text-xs">@＠青山　寿司くどう</p>
+
               <p className="w-full py-4">
-                とてもおいしかったです。ご飯によく合います。とてもおいしかったです。ご飯によく合います。
+                気さくな大将と豊富な日本酒で、つまみと握りが次々と出てきます。
+                締めの太巻きが絶品です。
               </p>
             </div>
             <div>

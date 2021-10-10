@@ -4,7 +4,7 @@ import Layout from "../components/layoutParts/Layout";
 
 export default function mainIndex() {
   return (
-    <Layout title="飯トモ一覧">
+    <Layout title="メシトモ一覧">
       <div className="flex flex-wrap items-center justify-center p-4 bg-white ">
         <div className="flex flex-col items-center m-3">
           <Image

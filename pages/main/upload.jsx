@@ -2,7 +2,7 @@ import Layout from "../../components/layoutParts/Layout";
 
 const upload = () => {
   return (
-    <Layout title="飯ラン投稿">
+    <Layout title="メシラン投稿">
       <div className="flex items-center justify-between mt-2 px-3">
         <div
           className="w-20 h-20 text-center align-middle pt-5 text-white text-bold"

@@ -34,7 +34,7 @@ const divStyle = {
 const MyComponent = () => {
 
   return (
-    <Layout title="飯ランMAP">
+    <Layout title="メシランMAP">
       <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_API_KEY}>
         <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={17}>
           <InfoWindow position={positionAkiba}>
