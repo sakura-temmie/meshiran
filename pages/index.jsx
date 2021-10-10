@@ -48,6 +48,7 @@ const Index = () => {
             <Image src={Logo} alt="logo" width="200" height="200" />
             <p className="text-center mb-5">メールアドレスでログイン</p>
           </div>
+          <p>{process.env.NEXT_PUBLIC_GOOGLE_API_KEY}</p>
           <p className="mb-2">メールアドレス</p>
           <input
             className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-red-500 focus:border-red-500 focus:z-10 sm:text-sm mb-6"
